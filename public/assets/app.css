@@ -129,12 +129,27 @@ h1 {
   border-bottom: 1px solid var(--color-border);
 }
 
-.task-title {
+.task-body {
   align-self: center;
   min-width: 0;
   padding: 0.65rem 0;
+}
+
+.task-title {
+  display: block;
   overflow-wrap: anywhere;
   line-height: 1.55;
+}
+
+.task-due {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+
+.field-label-spaced {
+  margin-top: 1.25rem;
 }
 
 .task-toggle-button,
@@ -245,7 +260,8 @@ h1 {
   line-height: 1;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="date"] {
   width: 100%;
   min-width: 0;
   min-height: 44px;
